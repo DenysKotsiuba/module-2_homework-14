@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "homework-14"
+version = "0.1.0"
+description = ""
+authors = ["Denys Kotsiuba"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+Django = "4.2.2"
+pymongo = "~4.4.0"
+psycopg2-binary = "~2.9.6"
+django-environ = "0.10.0"
+fastapi = "~0.100.0"
+uvicorn = {extras = ["standart"], version = "~0.22.0"}
+sqlalchemy = "~2.0.18"
+alembic = "~1.11.1"
+pydantic = {version = "1.10.10", extras = ["dotenv"]}
+libgravatar = "~1.0.4"
+passlib = {extras = ["bcrypt"], version = "~1.7.4"}
+python-jose = {extras = ["cryptograph"], version = "~3.3.0"}
+python-multipart = "~0.0.6"
+fastapi-mail = "~1.3.1"
+redis = "~4.6.0"
+fastapi-limiter = "~0.1.5"
+cloudinary = "~1.33.0"
+httpx = "^0.24.1"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "~7.0.1"
+pytest = "~7.4.0"
+pytest-cov = "~4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
